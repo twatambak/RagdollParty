@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Ragdoll Party</name>
+    <description></description>
+    <version>1</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>7u83gprgfpwu</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview mode">HTTP</prop>
+        <prop name="Sampling">Linear</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Ground" sid="3920927015746707">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1291266991201981">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9724232253488247" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="7163164075370727">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Body" sid="3069597881495564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="8317500164784343">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4545041139760296" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\RagdollParty - Tronco(4).png">
+                        <image-point name="head" x="0.5" y="0" />
+                        <image-point name="left arm" x="0.078125" y="0.09375" />
+                        <image-point name="right arm" x="0.9375" y="0.09375" />
+                        <image-point name="left leg" x="0.21875" y="0.921875" />
+                        <image-point name="right leg" x="0.796875" y="0.921875" />
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.859375" y="0.859375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Head" sid="4067049322312411">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="6022815193377862">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6390895710732999" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.488281" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LeftArm" sid="587195415841072">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="258642532487458">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3100433434958948" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RightArm" sid="55449018000023">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="2904694295563996">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3676892940395599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LeftLeg" sid="8172253270638705">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="858977047348162">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7362622601325103" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\Thiago L. Watambak\Downloads\RagdollParty - Perna.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RightLeg" sid="5013270820426386">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="8654935593531671">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8564142634823261" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="8" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

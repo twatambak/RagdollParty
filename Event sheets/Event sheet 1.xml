@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <comment>Create all the necessary revolute joints on startup to make a body.</comment>
+        <event-block sid="7125286064065839">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2850940423776219" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="7061119666684142" type="Body">
+                    <param id="0" name="This image point">&quot;head&quot;</param>
+                    <param id="1" name="Object">Head</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="3382282430132963" type="Body">
+                    <param id="0" name="This image point">&quot;left arm&quot;</param>
+                    <param id="1" name="Object">LeftArm</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="8457207423406382" type="Body">
+                    <param id="0" name="This image point">&quot;right arm&quot;</param>
+                    <param id="1" name="Object">RightArm</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="2586922902616666" type="Body">
+                    <param id="0" name="This image point">&quot;left leg&quot;</param>
+                    <param id="1" name="Object">LeftLeg</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="3162496803982664" type="Body">
+                    <param id="0" name="This image point">&quot;right leg&quot;</param>
+                    <param id="1" name="Object">RightLeg</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Move the body with the left mouse button.</comment>
+        <event-block sid="6662390120709514">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="4577712743525435" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="1" name="Apply force towards position" sid="3166593048137406" type="Body">
+                    <param id="0" name="Force">50</param>
+                    <param id="1" name="X">Mouse.X</param>
+                    <param id="2" name="Y">Mouse.Y</param>
+                    <param id="3" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Right click to remove all joints!</comment>
+        <event-block sid="634747696972539">
+            <conditions>
+                <condition id="0" name="On click" sid="5176095487599547" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="26" name="Remove all joints" sid="6878762031016518" type="Body" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
